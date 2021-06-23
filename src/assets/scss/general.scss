@@ -1,4 +1,6 @@
 @import "./main_bx.scss";
+@import "./fonts.scss";
+@import "./vendor/normalize";
 
 * {
     box-sizing: border-box;
@@ -71,5 +73,3 @@ h2 {
         font-size: 22px !important;
     }
 }
-
-

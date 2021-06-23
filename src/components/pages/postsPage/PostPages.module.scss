@@ -21,6 +21,12 @@
         &_autor {
             font-size: 14px;
             color: $blue-color;
+            span {
+                &:nth-child(2) {
+                    color: $black-color;
+                    margin-left: 10px;
+                }
+            }
         }
     }
     &__showMore {

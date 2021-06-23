@@ -7,7 +7,7 @@ export const Users = ({ users, postsId, className }) => {
                 return <div
                     key={u.id}
                     className={className}
-                >{u.name}</div>
+                ><span>{u.name}</span><span>(nikname:{u.username})</span></div>
             }
             )}
         </>

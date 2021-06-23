@@ -44,6 +44,7 @@ export const PostsPages = () => {
         setShowMore()
         setShowMoreHide(true)
     }
+    console.log(users)
 
     return (
         <section className={className(style.posts, style.container)}>
