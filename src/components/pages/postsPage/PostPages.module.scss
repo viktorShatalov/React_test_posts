@@ -1,0 +1,59 @@
+@import "../../../assets/scss/general.scss";
+
+.posts {
+    min-height: 90vh;
+    &__item {
+        margin-bottom: 20px;
+        &_content {
+            h3 {
+                &:first-letter {
+                    text-transform: capitalize;
+                }
+            }
+            &-body {
+                p {
+                    &:first-letter {
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+        &_autor {
+            font-size: 14px;
+            color: $blue-color;
+        }
+    }
+    &__showMore {
+        margin: 30px 0;
+        span {
+            display: block;
+            margin: 0 auto;
+            height: 40px;
+            width: 100%;
+            max-width: 200px;
+            background-color: $blue-color;
+            color: $white-color;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            cursor: pointer;
+        }
+        &.hide {
+            opacity: 0;
+        }
+    }
+    &__search {
+        margin-bottom: 20px;
+        input {
+            border: 1px solid $blue-color;
+            width: 100%;
+            max-width: 250px;
+            height: 30px;
+            padding: 5px 0 5px 5px;
+            display: block;
+            border-radius: 2px;
+        }
+    }
+}
