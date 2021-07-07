@@ -5,10 +5,14 @@ import className from "classnames"
 import axios from "axios"
 import { postsUrl, usersUrl } from "../../../api/web"
 
-import { Users } from './user/Users'
+import Users from './user/Users'
 import classNames from 'classnames'
 
-export const PostsPages = () => {
+import PropTypes from 'prop-types'
+
+const PostsPages = () => {
+  
+
     const [posts, setPosts] = useState([])
     const [users, setUsers] = useState([])
     const [loader, setLoader] = useState(true)
@@ -44,7 +48,6 @@ export const PostsPages = () => {
         setShowMore()
         setShowMoreHide(true)
     }
-    console.log(users)
 
     return (
         <section className={className(style.posts, style.container)}>
@@ -100,3 +103,7 @@ export const PostsPages = () => {
         </section>
     )
 }
+
+
+
+export default PostsPages

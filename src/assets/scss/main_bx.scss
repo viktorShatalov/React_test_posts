@@ -1,3 +1,16 @@
 @import "./vendor/smart-grid";
 @import "./variables.scss";
 @import "./mixins.scss";
+
+.main {
+    margin: 20px 0;
+}
+.container {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 15px;
+    @include to($mobile) {
+        padding: 0 10px;
+    }
+}

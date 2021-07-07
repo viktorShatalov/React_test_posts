@@ -5,7 +5,7 @@ import './App.scss';
 
 import { Header } from "./components/header/Header"
 import { Footer } from "./components/footer/Footer"
-import { PostsPages } from "./components/pages/postsPage/PostsPages"
+import PostsPages from "./components/pages/postsPage/PostsPages"
 import { Registration } from "./components/pages/registration/Registration"
 import { NextPage } from "./components/pages/nextPage/NextPage"
 

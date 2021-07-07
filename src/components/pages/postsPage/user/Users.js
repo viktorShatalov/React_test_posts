@@ -1,6 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-export const Users = ({ users, postsId, className }) => {
+const Users = ({ users, postsId, className }) => {
     return (
         <>
             {users.filter(user => user.id === postsId).map(u => {
@@ -13,3 +14,13 @@ export const Users = ({ users, postsId, className }) => {
         </>
     )
 }
+
+Users.propTypes = {
+    user: PropTypes.shape({
+        name: PropTypes.string,
+        username: PropTypes.string,
+        id: PropTypes.number,
+    }),
+    postsId: PropTypes.number
+}
+export default Users
